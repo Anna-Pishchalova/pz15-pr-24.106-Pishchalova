@@ -1,22 +1,43 @@
 package com.example.pz15;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+public class MainActivity extends BaseActivity {
 
-public class MainActivity extends AppCompatActivity {
+    private Button btnSwitchLanguage;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.splash_screen);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+        setContentView(R.layout.onboarding);
+        btnSwitchLanguage = findViewById(R.id.switchlanguage);
+        btnSwitchLanguage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switchLanguage();
+            }
         });
+    }
+
+    private void switchLanguage() {
+        String currentLanguage = LocaleHelper.getLanguage(this);
+
+        String newLanguage;
+        if (currentLanguage.equals("ru")) {
+            newLanguage = "en";
+            Toast.makeText(this, "Switching to English", Toast.LENGTH_SHORT).show();
+        } else {
+            newLanguage = "ru";
+            Toast.makeText(this, "Переключаем на русский", Toast.LENGTH_SHORT).show();
+        }
+        LocaleHelper.setLocale(this, newLanguage);
+        recreate();
     }
 }

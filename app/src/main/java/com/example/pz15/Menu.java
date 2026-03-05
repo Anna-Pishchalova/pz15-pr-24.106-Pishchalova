@@ -1,4 +1,4 @@
 package com.example.pz15;
 
-public class Menu {
+public class Menu extends BaseActivity{
 }

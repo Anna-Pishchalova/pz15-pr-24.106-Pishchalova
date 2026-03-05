@@ -6,7 +6,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Login extends AppCompatActivity {
+public class Login extends BaseActivity {
 
     private EditText editTextEmail;
     private EditText editTextPassword;

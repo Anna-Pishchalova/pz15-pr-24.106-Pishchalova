@@ -1,4 +1,5 @@
 package com.example.pz15;
 
-public class Onboarding {
+public class Onboarding extends BaseActivity {
+
 }

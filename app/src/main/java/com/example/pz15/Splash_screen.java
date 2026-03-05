@@ -6,7 +6,7 @@ import android.os.Handler;
 import android.os.Looper;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Splash_screen  extends AppCompatActivity {
+public class Splash_screen  extends BaseActivity {
     private static final long display = 1500;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

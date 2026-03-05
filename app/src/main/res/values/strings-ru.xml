@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="textView">Здравствуйте</string>
+    <string name="textView2">Наслаждайтесь процессом выбора.\nБудьте внимательны.\nДелайте все правильно.</string>
+    <string name="button">Войдите в свою учетную запись</string>
+    <string name="textView3">У вас еще нет учетной записи?</string>
+    <string name="button2">Зарегистрироваться</string>
+    <string name="textView4">Регистрироваться</string>
+    <string name="editTextTextEmailAddress">Почта</string>
+    <string name="editTextTextPassword">Пароль</string>
+    <string name="editTextText">Имя</string>
+    <string name="button3">Регистрироваться</string>
+    <string name="textView5">Зарегистрироваться</string>
+    <string name="button4">Профиль</string>
+    <string name="textView6">Зарегистрироваться</string>
+    <string name="button5">Зарегистрироваться</string>
+    <string name="textView7">Вход</string>
+    <string name="button6">Войдите в профиль</string>
+    <string name="textView8">С возвращением, Пользователь!</string>
+    <string name="textView9">Как вы себя чувствуете сегодня?</string>
+    <string name="textView10">Спокойный</string>
+    <string name="textView11">Расслабленный</string>
+    <string name="textView12">Сосредоточенный</string>
+    <string name="textView13">Взволнованный</string>
+    <string name="textView14">Веселый</string>
+    <string name="textView15">Печальный</string>
+    <string name="textView16">Медитация</string>
+    <string name="textView17">Медитация - это то, что</string>
+    <string name="button7">Более подробная информация</string>
+    <string name="textView18">Здоровье</string>
+    <string name="textView19">Здоровье - это самое важное</string>
+    <string name="textView20">Выход</string>
+    <string name="textView21">Почта</string>
+    <string name="textView22">+</string>
+    <string name="textView27">Удалить</string>
+    <string name="textView28">Закрыть</string>
+    <string name="textView29">Профиль</string>
+    <string name="textView30">Звук</string>
+    <string name="textView31">Главный</string>
+    <string name="textView32">Меню</string>
+</resources>
