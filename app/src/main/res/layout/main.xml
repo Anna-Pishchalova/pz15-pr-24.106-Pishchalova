@@ -99,7 +99,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/imageButton6"
+                android:id="@+id/calm"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -107,7 +107,7 @@
                 app:srcCompat="@drawable/calm" />
 
             <ImageButton
-                android:id="@+id/imageButton5"
+                android:id="@+id/relax"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -115,14 +115,14 @@
                 app:srcCompat="@drawable/rest" />
 
             <ImageButton
-                android:id="@+id/imageButton4"
+                android:id="@+id/energetic"
                 android:layout_width="109dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/transparent"
                 app:srcCompat="@drawable/notstress" />
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/sad"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/transparent"
