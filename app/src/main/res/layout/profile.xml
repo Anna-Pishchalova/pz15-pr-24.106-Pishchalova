@@ -185,7 +185,7 @@
         app:srcCompat="@drawable/pic4" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/addphoto"
         android:layout_width="145dp"
         android:layout_height="120dp"
         android:layout_marginStart="37dp"

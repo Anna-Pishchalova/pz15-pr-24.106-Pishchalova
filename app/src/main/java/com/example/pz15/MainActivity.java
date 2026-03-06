@@ -5,25 +5,38 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
+import android.provider.MediaStore;
 
 public class MainActivity extends BaseActivity {
 
     private Button btnSwitchLanguage;
+    private Button buttonCamera;
+    private static final int REQUEST_IMAGE_CAPTURE = 1;
 
-    @SuppressLint("MissingInflatedId")
     @Override
+    @SuppressLint("MissingInflatedId")
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.onboarding);
+        setContentView(R.layout.profile);
         btnSwitchLanguage = findViewById(R.id.switchlanguage);
-        btnSwitchLanguage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                switchLanguage();
-            }
-        });
+        if (btnSwitchLanguage != null) {
+            btnSwitchLanguage.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    switchLanguage();
+                }
+            });
+        }
+        buttonCamera = findViewById(R.id.addphoto);
+        if (buttonCamera != null) {
+            buttonCamera.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    openCamera();
+                }
+            });
+        }
     }
 
     private void switchLanguage() {
@@ -39,5 +52,12 @@ public class MainActivity extends BaseActivity {
         }
         LocaleHelper.setLocale(this, newLanguage);
         recreate();
+    }
+
+    private void openCamera() {
+        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
+            startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+        }
     }
 }
